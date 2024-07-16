@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./homepage style.css"/>
+    <script src="./homepage script.js"></script>
+  </head>
+  
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          André P
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://as2.ftcdn.net/v2/jpg/01/13/50/59/1000_F_113505924_RGrMAhhERaBqZGp89n0JLQKiqoXjXdrp.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm André P! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a physician and data scientist taking this course.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://as2.ftcdn.net/v2/jpg/01/13/50/59/1000_F_113505924_RGrMAhhERaBqZGp89n0JLQKiqoXjXdrp.jpg"/>
+            <h6>Medicine</h6>
+            <p>9 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://static-00.iconduck.com/assets.00/python-icon-512x509-pb65l7gl.png"/>
+            <h6>Python</h6>
+            <p>5 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png"/>
+            <h6>R</h6>
+            <p>5 years experience</p>
+        </div> 
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Medical AI Chatbot</h3>
+            <ul>
+              <li>Developed a secure website integrated with a chatbot to provide patient support and information on various medical conditions, treatments, and appointment scheduling. Utilized HTML, CSS, JavaScript, and IBM Watson Assistant to create an interactive and user-friendly platform.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Medical Sentiment Analyzer</h3>
+            <ul>
+              <li>Developed and deployed a sentiment analyzer for patient reviews and feedback on medical services and facilities. This tool helps healthcare providers understand patient sentiments and improve service quality. Used IBM Natural Language Understanding (NLU) for sentiment analysis.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Medical E-commerce Platform</h3>
+            <ul>
+              <li>Created a styled multi-page website for a new player in the medical supply industry. The platform includes a shopping cart integrated with Stripe for a secure payment gateway, providing a seamless shopping experience for healthcare professionals and facilities.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          André's proficiency in developing and deploying AI-driven medical applications is remarkable. His contributions to our sentiment analysis tool provided invaluable insights, enhancing our understanding of patient feedback.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          André is a highly skilled medical AI developer whose expertise in integrating AI solutions into healthcare platforms has significantly enhanced patient support and operational efficiency at our hospital.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with André on our medical AI chatbot project was a pleasure. His innovative approach and technical prowess greatly improved our patient interaction and satisfaction. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>"Thank you for your recommendation"</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
